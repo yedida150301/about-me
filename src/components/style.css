@@ -1,0 +1,948 @@
+/* style.css */
+
+/* Navbar container */
+/* Navbar container */
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: black;
+  z-index: 50;
+  /* Ensure that the navbar is placed above other content */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar inner content */
+.navbar-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px; /* Adjust this to your max width */
+}
+
+/* Navbar brand text */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  font-family: 'Lexend Deca', Arvo;
+  font-weight: bold;
+  font-size: 2rem;
+  color: transparent;
+  background: linear-gradient(to right, #fff 0%, #fff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+/* Navbar brand color spans */
+.navbar-brand .text-white {
+  color: white;
+}
+
+.navbar-brand .text-yellow-500 {
+  color: #FBBF24; /* Tailwind yellow-500 color */
+}
+
+/* Navbar menu items */
+.navbar-menu {
+  display: flex;
+  gap: 1.75rem; /* Adjust this to your desired gap */
+  margin-left: auto;
+}
+
+/* Navbar menu item link */
+.navbar-menu-item {
+  font-family: 'Lexend Deca', Arvo;
+  font-weight: normal;
+  color: #9CA3AF; /* Tailwind gray-400 color */
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+/* Navbar menu item hover effect */
+.navbar-menu-item:hover {
+  color: #FBBF24; /* Tailwind yellow-500 color */
+}
+
+.home {
+  background-color: #111827;
+  width: 100%;
+  padding-top: 100px;
+}
+
+.home-content {
+  background-color: #111827;
+  width: 100%;
+  height: 810px;
+  position: relative;
+}
+
+.home-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0;
+  position: absolute;
+  top: 250px;
+  left: 450px;
+  right: 820px;
+}
+
+.home-heading {
+  font-family: 'LexendDeca', Arvo;
+  font-weight: bold;
+  color: #f3f4f6;
+  font-size: 42px;
+  line-height: 64px;
+  white-space: nowrap;
+}
+
+.home-description {
+  font-family: 'LexendDeca', Arvo;
+  font-weight: normal;
+  color: #6b7280;
+  font-size: 16px;
+  line-height: 27px;
+  margin-top: 0;
+  text-align: left;
+}
+
+.home-greeting {
+  font-family: 'LexendDeca', Arvo;
+  font-weight: normal;
+  color: #eab308;
+  font-size: 16px;
+  line-height: 27px;
+  position: absolute;
+  top: 230px;
+  left: 451px;
+  white-space: nowrap;
+}
+
+.home-image {
+  position: absolute;
+  width: 427px;
+  height: 427px;
+  top: 120px;
+  left: 1100px;
+  object-fit: cover;
+}
+
+/* style.css */
+
+/* About section container */
+.about-section {
+  background-color: #1F2937; /* Tailwind gray-900 color */
+  width: 100%;
+  padding-top: 100px;
+}
+
+/* Background container for About section */
+.about-background {
+  position: relative;
+  width: 100%;
+  height: 810px;
+  background-color: #1F2937; /* Tailwind gray-900 color */
+}
+
+/* Image container */
+.about-image-container {
+  position: relative;
+  width: 510px;
+  height: 512px;
+  top: 64px;
+  left: 163px;
+}
+
+/* Image wrapper for gradient overlay and image */
+.about-image-wrapper {
+  position: relative;
+  height: 512px;
+}
+
+/* Gradient overlay on image */
+.about-image-overlay {
+  position: absolute;
+  width: 475px;
+  height: 502px;
+  top: 100px;
+  left: 200px;
+  border-radius: 24px; /* Rounded corners */
+  border: 16px solid #FBBF24; /* Tailwind yellow-500 color */
+  background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0) 100%);
+  transform: rotate(180deg);
+}
+
+/* Image */
+.about-image {
+  position: absolute;
+  width: 445px;
+  height: 480px;
+  top: 110px;
+  left: 215px;
+  border-radius: 5%;
+}
+
+/* Text container for About section */
+.about-text-container {
+  position: absolute;
+  top: 300px;
+  left: 875px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Text paragraphs */
+.about-text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Individual paragraph styling */
+.about-paragraph {
+  font-family: 'Lexend Deca', Helvetica;
+  font-weight: normal;
+  color: #9CA3AF;
+  font-size: 1rem;
+  top: 180px;
+  left: 875px;
+}
+
+/* Title styling */
+.about-title {
+  position: absolute;
+  top: 230px;
+  left: 875px;
+  font-family: 'Lexend Deca', Helvetica;
+  font-weight: bold;
+  font-size: 42px;
+  color: transparent;
+  background: linear-gradient(to right, #FBBF24, #FBBF24);
+  -webkit-background-clip: text;
+  background-clip: text;
+  line-height: 64px;
+  white-space: nowrap;
+}
+
+/* Title text colors */
+.about-title-text {
+  color: #F3F4F6; /* Tailwind gray-100 color */
+}
+
+.about-title-highlight {
+  color: #FBBF24; /* Tailwind yellow-500 color */
+}
+
+/* style.css */
+
+/* Portfolio section container */
+.portfolio-section {
+  background-color: #111827; /* Tailwind gray-900 color */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  height: 915px;
+  padding-top: 5%;
+  position: relative; /* Add padding to avoid overlapping with Navbar */
+}
+
+/* Background container for Portfolio section */
+.portfolio-background {
+  background-color: #111827; /* Tailwind gray-900 color */
+  width: 100%;
+  height: 810px;
+  position: relative;
+}
+
+/* Content container for Portfolio section */
+.portfolio-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Header section of Portfolio */
+.portfolio-header {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: center;
+}
+
+/* Title styling */
+.portfolio-title {
+  font-family: 'Lexend Deca', Helvetica;
+  font-weight: bold;
+  font-size: 42px;
+  color: transparent;
+  background: linear-gradient(to right, #FBBF24, #FBBF24);
+  -webkit-background-clip: text;
+  background-clip: text;
+  line-height: 64px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+/* Title text colors */
+.title-text {
+  color: #F3F4F6; /* Tailwind gray-100 color */
+}
+
+.title-highlight {
+  color: #FBBF24; /* Tailwind yellow-500 color */
+}
+
+/* Description styling */
+.portfolio-description {
+  font-family: 'Lexend Deca', Helvetica;
+  font-weight: normal;
+  color: #9CA3AF; /* Tailwind gray-400 color */
+  font-size: 1rem;
+  line-height: 1.7rem;
+  text-align: center;
+}
+
+/* Images container */
+.portfolio-images {
+  display: flex;
+  gap: 27px;
+  align-items: flex-start;
+  margin-bottom: 20px; /* Adjust margin to avoid overlapping */
+}
+
+/* Large image styling */
+.large-image {
+  width: 540px;
+  height: 565px;
+  object-fit: contain; /* Ensure the image covers the area without distortion */
+}
+
+/* Small images container */
+.small-images {
+  display: flex;
+  flex-direction: column;
+  gap: 29px;
+  width: 471px;
+}
+
+/* Small image styling */
+.small-image {
+  width: 100%;
+  height: 268px;
+  object-fit: cover; /* Ensure the image covers the area without distortion */
+}
+
+.resume {
+  background-color: #1F2937;
+  width: 100%;
+  height: 915px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.resume .div {
+  background-color: #1F2937;
+  height: 915px;
+  position: relative;
+  width: 1440px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.resume .box-frame {
+  align-items: flex-start;
+  display: inline-flex;
+  gap: 29px;
+  left: 174px;
+  position: absolute;
+  top: 462px;
+}
+
+.resume .box-frame-konten {
+  align-items: flex-start;
+  background-color: #020617;
+  border-radius: 12px;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 8px;
+  overflow: hidden;
+  padding: 32px;
+  position: relative;
+}
+
+.resume .div-2 {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 8px;
+  position: relative;
+}
+
+.resume .date {
+  color: #d1d5db;
+  font-family: "Lexend Deca", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 27px;
+  margin-top: -1px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.resume .frame-judul {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 4px;
+  position: relative;
+}
+
+.resume .judul {
+  color: #eab308;
+  font-family: "Lexend Deca", Helvetica;
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 41px;
+  margin-top: -1px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.resume .sub-judul {
+  color: #d1d5db;
+  font-family: "Lexend Deca", Helvetica;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 27px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.resume .frame-isi {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 8px;
+  padding: 8px 8px 8px 0px;
+  position: relative;
+}
+
+.resume .isi-konten {
+  color: #6b7280;
+  font-family: "Lexend Deca", Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 27px;
+  margin-top: -1px;
+  position: relative;
+  width: 286px;
+}
+
+.resume .frame-teks-wrapper {
+  align-items: flex-start;
+  background-color: #020617;
+  border-radius: 12px;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 8px;
+  height: 249px;
+  overflow: hidden;
+  padding: 32px;
+  position: relative;
+}
+
+.resume .frame-teks {
+  height: 193px;
+  margin-bottom: -8px;
+  position: relative;
+  width: 294px;
+}
+
+.resume .frame-konten {
+  align-items: flex-start;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 8px;
+  position: relative;
+}
+
+.resume .frame-konten-2 {
+  height: 158px;
+  position: relative;
+  width: 294px;
+}
+
+.resume .frame-judul-2 {
+  align-items: flex-start;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 4px;
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+
+.resume .isi-konten-wrapper {
+  align-items: flex-start;
+  display: inline-flex;
+  gap: 8px;
+  left: 0;
+  padding: 8px 8px 8px 0px;
+  position: absolute;
+  top: 72px;
+}
+
+.resume .box-frame-2 {
+  align-items: flex-start;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 24px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 25%;
+}
+
+.resume .p {
+  color: transparent;
+  font-family: "Lexend Deca", Helvetica;
+  font-size: 42px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 50px;
+  margin-top: 0;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.resume .text-wrapper {
+  color: #f3f4f6;
+}
+
+.resume .span {
+  color: #eab308;
+}
+
+.resume .teks {
+  color: #9ca3af;
+  font-family: "Lexend Deca", Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 27px;
+  position: relative;
+  width: 500px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.resume .navbar {
+  align-items: center;
+  background-color: #000000;
+  display: flex;
+  flex-direction: column;
+  left: 0;
+  padding: 16px 8px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.resume .konten {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 369px;
+  position: relative;
+}
+
+.resume .judul-2 {
+  color: transparent;
+  font-family: "Lexend Deca", Helvetica;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1px;
+  position: relative;
+  width: fit-content;
+}
+
+.resume .text-wrapper-2 {
+  color: #ffffff;
+}
+
+.resume .navbar-2 {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 27px;
+  position: relative;
+}
+
+.resume .text-wrapper-3 {
+  color: #9ca3af;
+  font-family: "Lexend Deca", Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1px;
+  position: relative;
+  width: fit-content;
+}
+
+.resume .text-wrapper-4 {
+  color: #ffffff;
+  font-family: "Lexend Deca", Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1px;
+  position: relative;
+  width: fit-content;
+}
+
+.contact {
+  background-color: #111827;
+  width: 100%;
+  height: 810px;
+  position: relative;
+}
+
+.contact .div {
+  background-color: #111827;
+  height: 890px;
+  position: relative;
+  width: 100%;
+}
+
+.contact .frame-icon {
+  height: 24px;
+  left: 1480px;
+  position: absolute;
+  top: 840px;
+  width: 144px;
+}
+
+.contact .footer {
+  color: #ffffff;
+  font-family: "Lexend Deca", Helvetica;
+  font-size: 24px;
+  font-weight: 700;
+  left: 129px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: relative;
+  text-align: left;
+  top: 840px;
+}
+
+.contact .frame-footer {
+  align-items: center;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 24px;
+  left: 377px;
+  position: absolute;
+  top: 650px;
+}
+
+.contact .about-me {
+  color: transparent;
+  font-family: "Lexend Deca", Helvetica;
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1px;
+  position: relative;
+  text-align: center;
+  width: fit-content;
+}
+
+.contact .text-wrapper {
+  color: #ffffff;
+}
+
+.contact .span {
+  color: #eab308;
+}
+
+.contact .teks {
+  color: #9ca3af;
+  font-family: "Lexend Deca", Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 27px;
+  position: relative;
+  text-align: center;
+  width: 1100px;
+}
+
+.contact .frame-box {
+  align-items: center;
+  display: inline-flex;
+  gap: 200px;
+  left: 395px;
+  position: relative;
+  top: 200px;
+}
+
+.contact .frame-alamat {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 16px;
+  position: relative;
+}
+
+.contact .alamat {
+  color: transparent;
+  font-family: "Lexend Deca", Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 41px;
+  margin-top: -1px;
+  position: relative;
+  width: fit-content;
+}
+
+.contact .text-wrapper-2 {
+  color: #eab308;
+  font-weight: 700;
+}
+
+.contact .text-wrapper-3 {
+  color: #f3f4f6;
+}
+
+.contact .p {
+  color: transparent;
+  font-family: "Lexend Deca", Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 41px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.contact .frame-komen {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 32px;
+  position: relative;
+}
+
+.contact .box-name {
+  height: 63px;
+  position: relative;
+  width: 352px;
+}
+
+.contact .overlap-group {
+  background-color: #1f2937;
+  height: 63px;
+  position: relative;
+  width: 350px;
+}
+
+.contact .text-wrapper-4 {
+  color: #f3f4f6;
+  font-family: "Lexend Deca", Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+  left: 18px;
+  letter-spacing: 0;
+  line-height: 41px;
+  position: absolute;
+  top: 11px;
+  white-space: nowrap;
+}
+
+.contact .box-komen {
+  height: 166px;
+  margin-right: -2px;
+  position: relative;
+  width: 542px;
+}
+
+.contact .overlap {
+  background-color: #1f2937;
+  height: 166px;
+  position: relative;
+  width: 540px;
+}
+
+.contact .text-wrapper-5 {
+  color: #f3f4f6;
+  font-family: "Lexend Deca", Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+  left: 18px;
+  letter-spacing: 0;
+  line-height: 41px;
+  position: absolute;
+  top: 10px;
+  white-space: nowrap;
+}
+
+.contact .frame-btn {
+  align-items: flex-start;
+  background-color: #eab308;
+  border-radius: 4px;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  padding: 16px 20px;
+  position: relative;
+}
+
+.contact .text-wrapper-6 {
+  color: #000000;
+  font-family: "Lexend Deca", Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 27px;
+  margin-top: -1px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.contact .frame-box-2 {
+  align-items: center;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 24px;
+  left: 398px;
+  position: absolute;
+  top: 96px;
+}
+
+.contact .frame-judul {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 8px;
+  position: relative;
+}
+
+.contact .judul {
+  color: transparent;
+  font-family: "Lexend Deca", Helvetica;
+  font-size: 42px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 64px;
+  margin-top: -64px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.contact .navbar {
+  align-items: center;
+  background-color: #000000;
+  display: flex;
+  flex-direction: column;
+  left: 0;
+  padding: 16px 8px;
+  position: absolute;
+  top: 0;
+  width: 1440px;
+}
+
+.contact .konten {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 369px;
+  position: relative;
+}
+
+.contact .judul-2 {
+  color: transparent;
+  font-family: "Lexend Deca", Helvetica;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1px;
+  position: relative;
+  width: fit-content;
+}
+
+.contact .navbar-2 {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 27px;
+  position: relative;
+}
+
+.contact .text-wrapper-7 {
+  color: #9ca3af;
+  font-family: "Lexend Deca", Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1px;
+  position: relative;
+  width: fit-content;
+}
+
+.contact .text-wrapper-8 {
+  color: #ffffff;
+  font-family: "Lexend Deca", Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1px;
+  position: relative;
+  width: fit-content;
+}
